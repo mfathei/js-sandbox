@@ -13,12 +13,20 @@
 
 <body>
     <div class="container">
-        <button id="button">
-            Get Data
+        <h2>Chunk Norris Joke Generator</h2>
+        <form>
+            <div>
+                <label for="count">Number of jokes</label>
+                <input type="number" id="count">
+            </div>
+        </form>
+        <button class="get-jokes">
+            Get Jokes
         </button>
         <br/>
         <br/>
-        <div id="output">
+        <label>jokes: </label>
+        <div class="jokes-output">
         </div>
     </div>
     <script src="app.js">
