@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "name": "TOP Mangement",
+        "user_id": 11
+    },
+    {
+        "id": 2,
+        "name": "Ahmed Youssef  team",
+        "user_id": 11
+    },
+    {
+        "id": 4,
+        "name": "Mohamed Abou Ghazala team",
+        "user_id": 11
+    },
+    {
+        "id": 5,
+        "name": "Hossam Ibrahim team",
+        "user_id": 11
+    },
+    {
+        "name": "Ibrahim Abdeengtdg team",
+        "user_id": 13,
+        "id": 6
+    },
+    {
+        "id": 7,
+        "name": "Andrew El Luzy  team",
+        "user_id": 11
+    },
+    {
+        "id": 8,
+        "name": "Mohamed El Sheikh team",
+        "user_id": 11
+    },
+    {
+        "name": "Ibrahim Abdeen team",
+        "user_id": 13,
+        "id": 9
+    }
+]
