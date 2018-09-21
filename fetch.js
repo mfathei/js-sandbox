@@ -8,10 +8,8 @@ function getText(e) {
     e.preventDefault();
 
     fetch('data.txt')
-        .then(function (response) {
-            return response.text();
-        })
-        .then(function (data) {
+        .then(res => res.text())
+        .then(data => {
             console.log(data);
             document.getElementById('output').innerHTML = data;
         });
@@ -21,15 +19,11 @@ function getJson(e) {
     e.preventDefault();
 
     fetch('data.json')
-        .then(function (response) {
-            return response.json();
-        })
-        .then(function (data) {
+        .then(res => res.json())
+        .then(data => {
             console.log(data);
             let output = '';
-            data.forEach(function (group) {
-                output += `<li>${group.name}</li>`;
-            });
+            data.forEach(group => output += `<li>${group.name}</li>`);
             document.getElementById('output').innerHTML = output;
         });
 }
@@ -38,15 +32,11 @@ function getExternal(e) {
     e.preventDefault();
 
     fetch('http://localhost:4500/groups')
-        .then(function (response) {
-            return response.json();
-        })
-        .then(function (data) {
+        .then(res => res.json())
+        .then(data => {
             console.log(data);
             let output = '';
-            data.forEach(function (group) {
-                output += `<li>${group.name}</li>`;
-            });
+            data.forEach(group => output += `<li>${group.name}</li>`);
             document.getElementById('output').innerHTML = output;
         });
 }
