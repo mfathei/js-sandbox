@@ -16,15 +16,15 @@ function loadData() {
             document.getElementById('output').innerHTML = this.responseText;
         }
     }
-    
+
     /**
      * this fires while the request is in progress
      * @return void no return data
      */
     xhr.onprogress = function(){
       console.log('READYSTATE', this.readyState);
-    } 
-    
+    }
+
     /**
      * old syntax
      * @return void no return data
@@ -46,7 +46,7 @@ function loadData() {
      *  403 - Forbidden
      *  404 - Not Found
      */
-    
+
     /**
      *  Ready State values
      *  0 - request not initialized
@@ -56,3 +56,5 @@ function loadData() {
      *  4 - request completed and response is ready
      */
 }
+
+document.getEle
